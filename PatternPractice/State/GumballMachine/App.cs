@@ -18,6 +18,7 @@ namespace PatternPractice.State.GumballMachine
             gumballMachine.InsertQuarter();
             gumballMachine.TurnCrank();
             Console.WriteLine(gumballMachine);
+            //Todo:Test git opration.
         }
     }
 }
