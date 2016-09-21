@@ -7,6 +7,9 @@ namespace PatternPractice
         static void Main(string[] args)
         {
             State.GumballMachine.App.Excute();
+
+            StaticFactory.Animal.App.Execute();
+
             Console.ReadKey();
         }
     }

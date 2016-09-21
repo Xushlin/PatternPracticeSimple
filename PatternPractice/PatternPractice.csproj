@@ -51,6 +51,13 @@
     <Compile Include="State\GumballMachine\SoldState.cs" />
     <Compile Include="State\GumballMachine\SoldOutState.cs" />
     <Compile Include="State\GumballMachine\WinnerState.cs" />
+    <Compile Include="StaticFactory\Animal\AnimalFactory.cs" />
+    <Compile Include="StaticFactory\Animal\AnimalType.cs" />
+    <Compile Include="StaticFactory\Animal\App.cs" />
+    <Compile Include="StaticFactory\Animal\Dog.cs" />
+    <Compile Include="StaticFactory\Animal\IAnimal.cs" />
+    <Compile Include="StaticFactory\Animal\Cat.cs" />
+    <Compile Include="StaticFactory\Animal\Mouse.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="App.config" />
