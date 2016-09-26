@@ -19,7 +19,7 @@ namespace PatternPractice.StaticFactory.Animal
 
             animal = AnimalFactory.CreateAnimal(AnimalType.Mouse);
             animal.Say();
-            Console.ReadKey();
+          
         }
     }
 }

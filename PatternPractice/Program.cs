@@ -10,6 +10,8 @@ namespace PatternPractice
 
             StaticFactory.Animal.App.Execute();
 
+            FactoryMethod.App.Execute();
+
             Console.ReadKey();
         }
     }
