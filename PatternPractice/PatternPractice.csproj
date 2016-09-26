@@ -42,6 +42,19 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="AbstractFactory\App.cs" />
+    <Compile Include="AbstractFactory\IButton.cs" />
+    <Compile Include="AbstractFactory\ILabel.cs" />
+    <Compile Include="AbstractFactory\ISkinFactory.cs" />
+    <Compile Include="AbstractFactory\ITxtBox.cs" />
+    <Compile Include="AbstractFactory\SpingSkinFactory.cs" />
+    <Compile Include="AbstractFactory\SpringButton.cs" />
+    <Compile Include="AbstractFactory\SpringLabel.cs" />
+    <Compile Include="AbstractFactory\SpringTextBox.cs" />
+    <Compile Include="AbstractFactory\SummerButton.cs" />
+    <Compile Include="AbstractFactory\SummerLabel.cs" />
+    <Compile Include="AbstractFactory\SummerSkinFactory.cs" />
+    <Compile Include="AbstractFactory\SummerTxtBox.cs" />
     <Compile Include="ConfigurationManager.cs" />
     <Compile Include="FactoryMethod\App.cs" />
     <Compile Include="FactoryMethod\DabaseLogger.cs" />

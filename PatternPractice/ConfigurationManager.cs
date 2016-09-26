@@ -11,5 +11,6 @@ namespace PatternPractice
     public static class ConfigManager
     {
         public static string MethodFactoryKey=> AppSettings["FactoryMethod"];
+        public static string AbstractFactoryKey => AppSettings["AbstractFactory"];
     }
 }

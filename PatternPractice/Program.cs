@@ -12,6 +12,8 @@ namespace PatternPractice
 
             FactoryMethod.App.Execute();
 
+            AbstractFactory.App.Execute();
+
             Console.ReadKey();
         }
     }
