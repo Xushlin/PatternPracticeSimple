@@ -16,6 +16,8 @@ namespace PatternPractice
 
             Prototype.App.Execute();
 
+            Builder.App.Execute();
+
             Console.ReadKey();
         }
     }

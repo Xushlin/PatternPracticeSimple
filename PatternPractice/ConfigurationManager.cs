@@ -1,9 +1,5 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Configuration;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
+﻿using System.Runtime.InteropServices.ComTypes;
+using PatternPractice.AbstractFactory;
 using static System.Configuration.ConfigurationSettings;
 
 namespace PatternPractice
@@ -12,5 +8,9 @@ namespace PatternPractice
     {
         public static string MethodFactoryKey=> AppSettings["FactoryMethod"];
         public static string AbstractFactoryKey => AppSettings["AbstractFactory"];
+        public static string BuilderKey => AppSettings["Builder"];
+
+        
+       
     }
 }

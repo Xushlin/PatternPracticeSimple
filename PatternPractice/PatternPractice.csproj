@@ -55,6 +55,13 @@
     <Compile Include="AbstractFactory\SummerLabel.cs" />
     <Compile Include="AbstractFactory\SummerSkinFactory.cs" />
     <Compile Include="AbstractFactory\SummerTxtBox.cs" />
+    <Compile Include="Builder\Actor.cs" />
+    <Compile Include="Builder\ActorBuilder.cs" />
+    <Compile Include="Builder\ActorController.cs" />
+    <Compile Include="Builder\AngelBuilder.cs" />
+    <Compile Include="Builder\App.cs" />
+    <Compile Include="Builder\DevilBuilder.cs" />
+    <Compile Include="Builder\HeroBuilder.cs" />
     <Compile Include="ConfigurationManager.cs" />
     <Compile Include="FactoryMethod\App.cs" />
     <Compile Include="FactoryMethod\DabaseLogger.cs" />
@@ -63,6 +70,7 @@
     <Compile Include="FactoryMethod\FileLoggerFactory.cs" />
     <Compile Include="FactoryMethod\ILogger.cs" />
     <Compile Include="FactoryMethod\ILoggerFactory.cs" />
+    <Compile Include="ObjectBuildFactory.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="Prototype\App.cs" />
