@@ -18,6 +18,8 @@ namespace PatternPractice
 
             Builder.App.Execute();
 
+            Adapter.App.Execute();
+
             Console.ReadKey();
         }
     }

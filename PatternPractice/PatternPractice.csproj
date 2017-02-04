@@ -55,6 +55,7 @@
     <Compile Include="AbstractFactory\SummerLabel.cs" />
     <Compile Include="AbstractFactory\SummerSkinFactory.cs" />
     <Compile Include="AbstractFactory\SummerTxtBox.cs" />
+    <Compile Include="Adapter\ScoreOperation.cs" />
     <Compile Include="Builder\Actor.cs" />
     <Compile Include="Builder\ActorBuilder.cs" />
     <Compile Include="Builder\ActorController.cs" />
