@@ -20,6 +20,8 @@ namespace PatternPractice
 
             Adapter.App.Execute();
 
+            Mediator.App.Execute();
+
             Console.ReadKey();
         }
     }
