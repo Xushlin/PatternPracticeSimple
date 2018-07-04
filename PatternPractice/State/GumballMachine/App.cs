@@ -1,10 +1,12 @@
 ﻿using System;
+using System.ComponentModel;
 
 namespace PatternPractice.State.GumballMachine
 {
+    [Description("9.State")]
     public static class App
     {
-        public static void Excute()
+        public static void Main()
         {
             Console.WriteLine("==============================");
             Console.WriteLine("===========State=====");
