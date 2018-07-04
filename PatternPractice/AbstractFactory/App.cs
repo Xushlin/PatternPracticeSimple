@@ -1,12 +1,13 @@
 ﻿using System;
+using System.ComponentModel;
 
 namespace PatternPractice.AbstractFactory
 {
+    [Description("3. Abstract Factory")]
     public static class App
     {
-        public static void Execute()
+        public static void Main()
         {
-
             Console.WriteLine("==============================");
             Console.WriteLine("========Abstract Factory =====");
             Console.WriteLine("====Create Spring Products====");

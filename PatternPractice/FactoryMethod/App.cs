@@ -1,10 +1,11 @@
 ﻿using System;
+using System.ComponentModel;
 
 namespace PatternPractice.FactoryMethod
-{
-    public static class App
+{[Description("2.Factory Method")]
+    static class App
     {
-        public static void Execute()
+        public static void Main()
         {
 
             Console.WriteLine("==============================");

@@ -1,7 +1,9 @@
 ﻿using System;
+using System.ComponentModel;
 
 namespace PatternPractice.Singleton
 {
+    [Description("4.Singleton")]
     public class Singleton //线程不安全 bad
     {
         private static Singleton _instance;

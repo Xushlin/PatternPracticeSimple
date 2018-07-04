@@ -1,10 +1,12 @@
 ﻿using System;
+using System.ComponentModel;
 
 namespace PatternPractice.StaticFactory.Animal
 {
-    public static class App
+    [Description("1.Static Factory ")]
+    class App
     {
-        public static void Execute()
+        static void Main()
         {
             Console.WriteLine("==============================");
             Console.WriteLine("===========Static Factory=====");
@@ -23,7 +25,6 @@ namespace PatternPractice.StaticFactory.Animal
             IProject project=new ProejctA();
             project.Create();
             project.Say();
-
         }
     }
 

@@ -1,10 +1,12 @@
 ﻿using System;
+using System.ComponentModel;
 
 namespace PatternPractice.Builder
 {
+    [Description("6.Builder")]
     public static class App
     {
-        public static void Execute()
+        public static void Main()
         {
             Console.WriteLine("==============================");
             Console.WriteLine("===========Builder =====");

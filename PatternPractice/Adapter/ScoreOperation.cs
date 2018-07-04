@@ -1,5 +1,6 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.ComponentModel;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
@@ -107,9 +108,10 @@ namespace PatternPractice.Adapter
         }
     }
 
+    [Description("7.Adapter")]
     public static class App
     {
-        public static void Execute()
+        public static void Main()
         {
             Console.WriteLine("==============================");
             Console.WriteLine("========Adapter =====");
