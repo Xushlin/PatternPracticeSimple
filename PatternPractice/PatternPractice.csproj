@@ -102,6 +102,7 @@
     <Compile Include="StaticFactory\Animal\IAnimal.cs" />
     <Compile Include="StaticFactory\Animal\Cat.cs" />
     <Compile Include="StaticFactory\Animal\Mouse.cs" />
+    <Compile Include="StaticFactory\Audio\Audio.cs" />
     <Compile Include="StaticFactory\Structure\FactorySturcture.cs" />
   </ItemGroup>
   <ItemGroup>
