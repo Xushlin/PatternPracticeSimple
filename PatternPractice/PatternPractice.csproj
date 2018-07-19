@@ -102,11 +102,13 @@
     <Compile Include="StaticFactory\Animal\IAnimal.cs" />
     <Compile Include="StaticFactory\Animal\Cat.cs" />
     <Compile Include="StaticFactory\Animal\Mouse.cs" />
+    <Compile Include="StaticFactory\Structure\FactorySturcture.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="App.config">
       <SubType>Designer</SubType>
     </None>
+    <None Include="StaticFactory\Structure\Static Factory.vsd" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="Facade\" />

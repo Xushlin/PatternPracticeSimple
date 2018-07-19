@@ -59,7 +59,4 @@ namespace PatternPractice.StaticFactory.Animal
             return new ProejctB();
         }
     }
-
-    
-
 }
