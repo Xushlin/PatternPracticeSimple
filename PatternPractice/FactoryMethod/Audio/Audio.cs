@@ -9,107 +9,107 @@ using PatternPractice.StaticFactory.Audio;
 
 namespace PatternPractice.FactoryMethod.Audio
 {
-public interface IAudio
-{
-    void Play(string name);
-}
-public interface IFactory
-{
-    IAudio Create();
-}
-public class Wma : IAudio
-{
-    public void Play(string name)
+    public interface IAudio
     {
-        Console.WriteLine("Start playing wma file...");
-        Console.WriteLine($"The song name is: [{name}.wma]");
-        Console.WriteLine("..........");
+        void Play(string name);
     }
-}
-public class Wav : IAudio
-{
-    public void Play(string name)
+    public interface IFactory
     {
-        Console.WriteLine("Start playing wav file...");
-        Console.WriteLine($"The song name is: [{name}.wav]");
-        Console.WriteLine("..........");
+        IAudio Create();
     }
-}
-public class Mp3 : IAudio
-{
-    public void Play(string name)
+    public class Wma : IAudio
     {
-        Console.WriteLine("Start playing mp3...");
-        Console.WriteLine($"The song name is: [{name}.mp3]");
-        Console.WriteLine("..........");
+        public void Play(string name)
+        {
+            Console.WriteLine("Start playing wma file...");
+            Console.WriteLine($"The song name is: [{name}.wma]");
+            Console.WriteLine("..........");
+        }
     }
-}
+    public class Wav : IAudio
+    {
+        public void Play(string name)
+        {
+            Console.WriteLine("Start playing wav file...");
+            Console.WriteLine($"The song name is: [{name}.wav]");
+            Console.WriteLine("..........");
+        }
+    }
+    public class Mp3 : IAudio
+    {
+        public void Play(string name)
+        {
+            Console.WriteLine("Start playing mp3...");
+            Console.WriteLine($"The song name is: [{name}.mp3]");
+            Console.WriteLine("..........");
+        }
+    }
 
-public class Acc : IAudio
-{
-    public void Play(string name)
+    public class Acc : IAudio
     {
-        Console.WriteLine("Start playing Acc...");
-        Console.WriteLine($"The song name is: [{name}.acc]");
-        Console.WriteLine("..........");
+        public void Play(string name)
+        {
+            Console.WriteLine("Start playing Acc...");
+            Console.WriteLine($"The song name is: [{name}.acc]");
+            Console.WriteLine("..........");
+        }
     }
-}
 
-public class WmaFactory : IFactory
-{
-    public IAudio Create()
+    public class WmaFactory : IFactory
     {
-        return new Wma();
+        public IAudio Create()
+        {
+            return new Wma();
+        }
     }
-}
 
-public class WavFactory : IFactory
-{
-    public IAudio Create()
+    public class WavFactory : IFactory
     {
-        return new Wav();
+        public IAudio Create()
+        {
+            return new Wav();
+        }
     }
-}
 
-public class Mp3Factory : IFactory
-{
-    public IAudio Create()
+    public class Mp3Factory : IFactory
     {
-        return new Mp3();
+        public IAudio Create()
+        {
+            return new Mp3();
+        }
     }
-}
 
-public class AccFactory : IFactory
-{
-    public IAudio Create()
+    public class AccFactory : IFactory
     {
-        return new Acc();
+        public IAudio Create()
+        {
+            return new Acc();
+        }
     }
-}
 
-[Description("2.1. Factory Mothed payer")]
-public class App
-{
-    static void Main()
+    [Description("2.1. Factory Mothed payer")]
+    public class App
     {
-        //Wma play
-        IFactory wmaFactory = new WmaFactory();
-        IAudio wamAudio = wmaFactory.Create();
-        wamAudio.Play("take me to your hert");
-        //Wav play
-        IFactory wavFactory = new WavFactory();
-        IAudio wavAudio = wavFactory.Create();
-        wavAudio.Play("take me to your hert");
-        //Mp3 play
-        IFactory mp3Factory = new Mp3Factory();
-        IAudio mp3Audio = mp3Factory.Create();
-        mp3Audio.Play("take me to your hert");
-        //Acc play
-        IFactory accFactory = new AccFactory();
-        IAudio accAudio = accFactory.Create();
-        accAudio.Play("take me to your hert");
+        static void Main()
+        {
+            //Wma play
+            IFactory wmaFactory = new WmaFactory();
+            IAudio wamAudio = wmaFactory.Create();
+            wamAudio.Play("take me to your hert");
+            //Wav play
+            IFactory wavFactory = new WavFactory();
+            IAudio wavAudio = wavFactory.Create();
+            wavAudio.Play("take me to your hert");
+            //Mp3 play
+            IFactory mp3Factory = new Mp3Factory();
+            IAudio mp3Audio = mp3Factory.Create();
+            mp3Audio.Play("take me to your hert");
+            //Acc play
+            IFactory accFactory = new AccFactory();
+            IAudio accAudio = accFactory.Create();
+            accAudio.Play("take me to your hert");
 
-        Console.ReadKey();
+            Console.ReadKey();
+        }
     }
-}
 }
