@@ -57,6 +57,7 @@
     <Compile Include="AbstractFactory\SpringButton.cs" />
     <Compile Include="AbstractFactory\SpringLabel.cs" />
     <Compile Include="AbstractFactory\SpringTextBox.cs" />
+    <Compile Include="AbstractFactory\Structure\AbstractFactoryStructure.cs" />
     <Compile Include="AbstractFactory\SummerButton.cs" />
     <Compile Include="AbstractFactory\SummerLabel.cs" />
     <Compile Include="AbstractFactory\SummerSkinFactory.cs" />

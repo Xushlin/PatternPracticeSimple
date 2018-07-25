@@ -17,6 +17,34 @@ namespace PatternPractice.FactoryMethod.Audio
     {
         IAudio Create();
     }
+
+    public class MyObserve : IObserver<IAudio>
+    {
+        public void OnNext(IAudio value)
+        {
+            throw new NotImplementedException();
+        }
+
+        public void OnError(Exception error)
+        {
+            throw new NotImplementedException();
+        }
+
+        public void OnCompleted()
+        {
+            throw new NotImplementedException();
+        }
+    }
+
+    public class MyObservable:IObservable<IAudio>
+    {
+        public IDisposable Subscribe(IObserver<IAudio> observer)
+        {
+            observer.OnNext(new Mp3());
+            return null;
+        }
+    }
+
     public class Wma : IAudio
     {
         public void Play(string name)
@@ -24,6 +52,7 @@ namespace PatternPractice.FactoryMethod.Audio
             Console.WriteLine("Start playing wma file...");
             Console.WriteLine($"The song name is: [{name}.wma]");
             Console.WriteLine("..........");
+            
         }
     }
     public class Wav : IAudio
