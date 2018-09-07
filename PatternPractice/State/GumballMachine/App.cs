@@ -9,7 +9,7 @@ namespace PatternPractice.State.GumballMachine
         public static void Main()
         {
             Console.WriteLine("==============================");
-            Console.WriteLine("===========State=====");
+            Console.WriteLine("===============State==========");
             Console.WriteLine("==============================");
             var gumballMachine = new GumballMachine(5);
             Console.WriteLine(gumballMachine);
@@ -23,7 +23,6 @@ namespace PatternPractice.State.GumballMachine
             gumballMachine.InsertQuarter();
             gumballMachine.TurnCrank();
             Console.WriteLine(gumballMachine);
-            //Todo:Test git opration.
         }
     }
 }

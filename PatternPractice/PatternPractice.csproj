@@ -62,7 +62,15 @@
     <Compile Include="AbstractFactory\SummerLabel.cs" />
     <Compile Include="AbstractFactory\SummerSkinFactory.cs" />
     <Compile Include="AbstractFactory\SummerTxtBox.cs" />
-    <Compile Include="Adapter\ScoreOperation.cs" />
+    <Compile Include="Adapter\ScoreOperation\BinarySearchAdaptee.cs" />
+    <Compile Include="Adapter\ScoreOperation\IScoreOperation.cs" />
+    <Compile Include="Adapter\ScoreOperation\OperationAdapter.cs" />
+    <Compile Include="Adapter\ScoreOperation\QuickSortAdaptee.cs" />
+    <Compile Include="Adapter\ScoreOperation\App.cs" />
+    <Compile Include="Adapter\Structure\Adaptee.cs" />
+    <Compile Include="Adapter\Structure\Adapter.cs" />
+    <Compile Include="Adapter\Structure\App.cs" />
+    <Compile Include="Adapter\Structure\ITarget.cs" />
     <Compile Include="Builder\Actor.cs" />
     <Compile Include="Builder\ActorBuilder.cs" />
     <Compile Include="Builder\ActorController.cs" />
@@ -146,8 +154,17 @@
     <Compile Include="StaticFactory\Animal\IAnimal.cs" />
     <Compile Include="StaticFactory\Animal\Cat.cs" />
     <Compile Include="StaticFactory\Animal\Mouse.cs" />
-    <Compile Include="StaticFactory\Audio\Audio.cs" />
-    <Compile Include="StaticFactory\Structure\FactorySturcture.cs" />
+    <Compile Include="StaticFactory\Audio\App.cs" />
+    <Compile Include="StaticFactory\Audio\AudioFactory.cs" />
+    <Compile Include="StaticFactory\Audio\IAudio.cs" />
+    <Compile Include="StaticFactory\Audio\Mp3.cs" />
+    <Compile Include="StaticFactory\Audio\Wav.cs" />
+    <Compile Include="StaticFactory\Audio\Wma.cs" />
+    <Compile Include="StaticFactory\Structure\ConcreteProductA.cs" />
+    <Compile Include="StaticFactory\Structure\ConcreteProductB.cs" />
+    <Compile Include="StaticFactory\Structure\Factory.cs" />
+    <Compile Include="StaticFactory\Structure\App.cs" />
+    <Compile Include="StaticFactory\Structure\IProduct.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="App.config">
