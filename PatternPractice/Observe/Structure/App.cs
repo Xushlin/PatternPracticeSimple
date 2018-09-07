@@ -1,7 +1,7 @@
 ﻿using System;
 using System.ComponentModel;
 
-namespace PatternPractice.Observe.ObserveStructure
+namespace PatternPractice.Observe.Structure
 {
     public class User
     {

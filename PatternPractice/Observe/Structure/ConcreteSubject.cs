@@ -1,6 +1,6 @@
 ﻿using System.Collections.Generic;
 
-namespace PatternPractice.Observe.ObserveStructure
+namespace PatternPractice.Observe.Structure
 {
     public class ConcreteSubject:ISubject
     {

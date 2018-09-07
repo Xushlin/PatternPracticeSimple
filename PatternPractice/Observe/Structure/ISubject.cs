@@ -1,4 +1,4 @@
-﻿namespace PatternPractice.Observe.ObserveStructure
+﻿namespace PatternPractice.Observe.Structure
 {
     public interface ISubject
     {

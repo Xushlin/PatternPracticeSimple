@@ -1,6 +1,6 @@
 ﻿using System;
 
-namespace PatternPractice.Observe.ObserveStructure
+namespace PatternPractice.Observe.Structure
 {
     public class ConcreteObserver : IObserver
     {
