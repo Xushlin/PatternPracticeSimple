@@ -1,7 +1,7 @@
 ﻿using System;
 using System.ComponentModel;
 
-namespace PatternPractice.Prototype
+namespace PatternPractice.Prototype.Structure
 {
     [Description("5.Prototype")]
     public static class App
@@ -11,7 +11,7 @@ namespace PatternPractice.Prototype
             Console.WriteLine("==============================");
             Console.WriteLine("===========Prototype =========");
             Console.WriteLine("==============================");
-            Prototype prototype;
+            Structure.Prototype prototype;
 
             prototype = new ConcretePrototype1();
 

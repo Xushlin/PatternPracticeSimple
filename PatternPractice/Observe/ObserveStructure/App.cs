@@ -1,54 +1,8 @@
 ﻿using System;
-using System.Collections.Generic;
 using System.ComponentModel;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 
 namespace PatternPractice.Observe.ObserveStructure
 {
-    public interface ISubject
-    {
-        void Register(IObserver observer);
-        void UnRegister(IObserver observer);
-        void Notify();
-    }
-
-    public interface IObserver
-    {
-        void Update();
-    }
-
-    public class ConcreteSubject:ISubject
-    {
-        IList<IObserver> _observers=new List<IObserver>();
-        public void Register(IObserver observer)
-        {
-            _observers.Add(observer);
-        }
-
-        public void UnRegister(IObserver observer)
-        {
-            _observers.Remove(observer);
-        }
-
-        public void Notify()
-        {
-            foreach (var observer in _observers)
-            {
-                observer.Update();
-            }
-        }
-    }
-
-    public class ConcreteObserver : IObserver
-    {
-        public void Update()
-        {
-            Console.WriteLine("I'm Concrete Observer:)");
-        }
-    }
-
     public class User
     {
         public string FirstName { get; set; }
@@ -62,7 +16,6 @@ namespace PatternPractice.Observe.ObserveStructure
             return null;
         }
     }
-
     public class MyObserver : IObserver<User>
     {
         public void OnNext(User value)
@@ -94,8 +47,6 @@ namespace PatternPractice.Observe.ObserveStructure
             IObservable<User> ob=new MyObservable();
             IObserver<User> Obs=new MyObserver();
             ob.Subscribe(Obs);
-
-            
 
             Console.ReadKey();
         }
