@@ -63,7 +63,6 @@
     <Compile Include="AbstractFactory\SummerSkinFactory.cs" />
     <Compile Include="AbstractFactory\SummerTxtBox.cs" />
     <Compile Include="Adapter\ScoreOperation.cs" />
-    <Compile Include="Bridge\Class1.cs" />
     <Compile Include="Builder\Actor.cs" />
     <Compile Include="Builder\ActorBuilder.cs" />
     <Compile Include="Builder\ActorController.cs" />
@@ -71,6 +70,10 @@
     <Compile Include="Builder\App.cs" />
     <Compile Include="Builder\DevilBuilder.cs" />
     <Compile Include="Builder\HeroBuilder.cs" />
+    <Compile Include="ChainOfResponsibility\App.cs" />
+    <Compile Include="ChainOfResponsibility\Structure\Structure.cs" />
+    <Compile Include="Composite\RealWorld\RealWorld.cs" />
+    <Compile Include="Composite\Structure\Structure.cs" />
     <Compile Include="ConfigurationManager.cs" />
     <Compile Include="FactoryMethod\App.cs" />
     <Compile Include="FactoryMethod\Audio\Audio.cs" />
@@ -81,6 +84,17 @@
     <Compile Include="FactoryMethod\ILogger.cs" />
     <Compile Include="FactoryMethod\ILoggerFactory.cs" />
     <Compile Include="FactoryMethod\Structure\FactoryMethodStructure.cs" />
+    <Compile Include="Flyweight\CharacterInstance\App.cs" />
+    <Compile Include="Flyweight\CharacterInstance\Character.cs" />
+    <Compile Include="Flyweight\CharacterInstance\CharacterA.cs" />
+    <Compile Include="Flyweight\CharacterInstance\CharacterB.cs" />
+    <Compile Include="Flyweight\CharacterInstance\CharacterFactory.cs" />
+    <Compile Include="Flyweight\CharacterInstance\CharacterZ.cs" />
+    <Compile Include="Flyweight\Structure\App.cs" />
+    <Compile Include="Flyweight\Structure\ConcreteFlyweight.cs" />
+    <Compile Include="Flyweight\Structure\Flyweight.cs" />
+    <Compile Include="Flyweight\Structure\FlyweightFactory.cs" />
+    <Compile Include="Flyweight\Structure\UnsharedConcreteFliyweight.cs" />
     <Compile Include="Mediator\App.cs" />
     <Compile Include="Mediator\IMediator.cs" />
     <Compile Include="Mediator\IComponent.cs" />
@@ -117,6 +131,7 @@
     <None Include="StaticFactory\Structure\Static Factory.vsd" />
   </ItemGroup>
   <ItemGroup>
+    <Folder Include="Bridge\" />
     <Folder Include="Facade\" />
   </ItemGroup>
   <ItemGroup>

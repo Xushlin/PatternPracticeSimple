@@ -4,6 +4,7 @@ namespace PatternPractice.Mediator
 {
     public abstract class Component
     {
+
         protected abstract IMediator Mediator { get; }
 
         public void Changed()

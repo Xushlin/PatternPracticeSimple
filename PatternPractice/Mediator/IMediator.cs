@@ -9,6 +9,6 @@ namespace PatternPractice.Mediator
 {
     public interface IMediator
     {
-        void ComponentChanged(IComponent component);
+        void ComponentChanged(Component component);
     }
 }
