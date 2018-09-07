@@ -57,7 +57,16 @@
     <Compile Include="AbstractFactory\SpringButton.cs" />
     <Compile Include="AbstractFactory\SpringLabel.cs" />
     <Compile Include="AbstractFactory\SpringTextBox.cs" />
-    <Compile Include="AbstractFactory\Structure\AbstractFactoryStructure.cs" />
+    <Compile Include="AbstractFactory\Structure\App.cs" />
+    <Compile Include="AbstractFactory\Structure\ConcreteFactoryA.cs" />
+    <Compile Include="AbstractFactory\Structure\ConcreteFactoryB.cs" />
+    <Compile Include="AbstractFactory\Structure\ConcreteProductA1.cs" />
+    <Compile Include="AbstractFactory\Structure\ConcreteProductA2.cs" />
+    <Compile Include="AbstractFactory\Structure\ConcreteProductB1.cs" />
+    <Compile Include="AbstractFactory\Structure\ConcreteProductB2.cs" />
+    <Compile Include="AbstractFactory\Structure\IFactory.cs" />
+    <Compile Include="AbstractFactory\Structure\IProductA.cs" />
+    <Compile Include="AbstractFactory\Structure\IProductB.cs" />
     <Compile Include="AbstractFactory\SummerButton.cs" />
     <Compile Include="AbstractFactory\SummerLabel.cs" />
     <Compile Include="AbstractFactory\SummerSkinFactory.cs" />

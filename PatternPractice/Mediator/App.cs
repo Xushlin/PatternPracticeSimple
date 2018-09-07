@@ -10,7 +10,7 @@ namespace PatternPractice.Mediator
         {
 
             Console.WriteLine("==============================");
-            Console.WriteLine("===========Mediator =====");
+            Console.WriteLine("===========Mediator ==========");
             Console.WriteLine("==============================");
 
             ConcreteMediator mediator =new ConcreteMediator();
