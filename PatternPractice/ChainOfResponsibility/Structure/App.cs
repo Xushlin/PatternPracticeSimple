@@ -1,12 +1,7 @@
 ﻿using System;
-using System.Collections.Generic;
 using System.ComponentModel;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
-using PatternPractice.ChainOfResponsibility.Structure;
 
-namespace PatternPractice.ChainOfResponsibility
+namespace PatternPractice.ChainOfResponsibility.Structure
 {
     [Description("1.1.1 Chain Of Responsibility Parttern")]
     public class App

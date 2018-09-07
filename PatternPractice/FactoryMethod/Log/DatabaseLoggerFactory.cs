@@ -1,4 +1,4 @@
-﻿namespace PatternPractice.FactoryMethod
+﻿namespace PatternPractice.FactoryMethod.Log
 {
     public class DatabaseLoggerFactory:ILoggerFactory
     {

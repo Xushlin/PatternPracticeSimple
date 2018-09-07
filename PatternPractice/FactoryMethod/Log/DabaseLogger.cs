@@ -1,6 +1,6 @@
 using System;
 
-namespace PatternPractice.FactoryMethod
+namespace PatternPractice.FactoryMethod.Log
 {
     public class DabaseLogger : ILogger
     {
