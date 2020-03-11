@@ -12,12 +12,23 @@ namespace PatternPractice.Singleton
 
         public static Singleton Instance => _instance ?? (_instance = new Singleton());
     }
-
+    [Description("0.Singleton")]
+    public static class APP
+    {
+        public static void Main()
+        {
+            Console.WriteLine("======Sigleton==========");
+            var singleton = EagerSingleton.Instance;
+            var singleton2 = EagerSingleton.Instance;
+        }
+    }
     public sealed class EagerSingleton//线程安全
     {
         private static readonly EagerSingleton _instance = new EagerSingleton();
 
-        private EagerSingleton() { }
+        private EagerSingleton() {
+            Console.WriteLine("CREATE SINGLETON");
+        }
 
         public static EagerSingleton Instance => _instance;
 
@@ -43,7 +54,7 @@ namespace PatternPractice.Singleton
             }
         }
     }
-    //Doble check Bad
+    //DobBle check Bad
     public class LazySingleton2
     {
         private static LazySingleton2 _instance;
