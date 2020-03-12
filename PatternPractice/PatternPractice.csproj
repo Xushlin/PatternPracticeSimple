@@ -176,6 +176,14 @@
     <Compile Include="StaticFactory\Audio\Mp3.cs" />
     <Compile Include="StaticFactory\Audio\Wav.cs" />
     <Compile Include="StaticFactory\Audio\Wma.cs" />
+    <Compile Include="StaticFactory\Calculator\App.cs" />
+    <Compile Include="StaticFactory\Calculator\Convertor.cs" />
+    <Compile Include="StaticFactory\Calculator\IOperation.cs" />
+    <Compile Include="StaticFactory\Calculator\OperationAdd.cs" />
+    <Compile Include="StaticFactory\Calculator\OperationDiv.cs" />
+    <Compile Include="StaticFactory\Calculator\OperationFactory.cs" />
+    <Compile Include="StaticFactory\Calculator\OperationMul.cs" />
+    <Compile Include="StaticFactory\Calculator\OperationSub.cs" />
     <Compile Include="StaticFactory\Structure\ConcreteProductA.cs" />
     <Compile Include="StaticFactory\Structure\ConcreteProductB.cs" />
     <Compile Include="StaticFactory\Structure\Factory.cs" />
