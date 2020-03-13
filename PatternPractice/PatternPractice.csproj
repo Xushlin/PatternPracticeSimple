@@ -103,6 +103,7 @@
     <Compile Include="Composite\Structure\Leaf.cs" />
     <Compile Include="Composite\Structure\App.cs" />
     <Compile Include="ConfigurationManager.cs" />
+    <Compile Include="Decorator\Structure\Component.cs" />
     <Compile Include="FactoryMethod\Log\App.cs" />
     <Compile Include="FactoryMethod\Audio\Acc.cs" />
     <Compile Include="FactoryMethod\Audio\AccFactory.cs" />
@@ -200,6 +201,7 @@
   <ItemGroup>
     <Folder Include="Bridge\" />
     <Folder Include="Facade\" />
+    <Folder Include="Strategy\" />
   </ItemGroup>
   <ItemGroup>
     <Content Include="FactoryMethod\FactoryMethod.txt" />
