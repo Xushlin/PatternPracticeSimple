@@ -203,6 +203,8 @@
     <None Include="App.config">
       <SubType>Designer</SubType>
     </None>
+    <None Include="ClassDiagram1.cd" />
+    <None Include="ClassDiagram2.cd" />
     <None Include="parrern.vsd" />
     <None Include="StaticFactory\Structure\Static Factory.vsd" />
   </ItemGroup>
@@ -212,6 +214,7 @@
   </ItemGroup>
   <ItemGroup>
     <Content Include="FactoryMethod\FactoryMethod.txt" />
+    <Content Include="Strategy\Structure\Strategy.png" />
     <None Include="packages.config" />
     <None Include="Patern.md" />
   </ItemGroup>
