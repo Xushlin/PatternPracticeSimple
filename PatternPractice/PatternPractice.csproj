@@ -197,6 +197,7 @@
     <Compile Include="Strategy\Structure\ConcreteStrategyC.cs" />
     <Compile Include="Strategy\Structure\Context.cs" />
     <Compile Include="Strategy\Structure\Strategy.cs" />
+    <Compile Include="TemplateMethod\Structure\AbstractClass.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="App.config">

@@ -12,7 +12,7 @@ namespace PatternPractice.TemplateMethod.Sturcture
         {
             PrimitiveOperation1();
             PrimitiveOperation2();
-            System.Console.WriteLine("");
+            Console.WriteLine("");
         }
     }
 
@@ -25,9 +25,9 @@ namespace PatternPractice.TemplateMethod.Sturcture
 
     public class ConcreteClassB : AbsctractClass
     {
-        public override void PrimitiveOperation1() => System.Console.WriteLine($"{nameof(ConcreteClassB)}.{nameof(PrimitiveOperation1)}");
+        public override void PrimitiveOperation1() => Console.WriteLine($"{nameof(ConcreteClassB)}.{nameof(PrimitiveOperation1)}");
 
-        public override void PrimitiveOperation2() => System.Console.WriteLine($"{nameof(ConcreteClassB)}.{nameof(PrimitiveOperation2)}");
+        public override void PrimitiveOperation2() => Console.WriteLine($"{nameof(ConcreteClassB)}.{nameof(PrimitiveOperation2)}");
     }
 
     [Description("TempalteMethod")]
