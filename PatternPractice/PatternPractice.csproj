@@ -190,6 +190,7 @@
     <Compile Include="StaticFactory\Structure\Factory.cs" />
     <Compile Include="StaticFactory\Structure\App.cs" />
     <Compile Include="StaticFactory\Structure\IProduct.cs" />
+    <Compile Include="Strategy\Sort\SortStrategy.cs" />
     <Compile Include="Strategy\Structure\App.cs" />
     <Compile Include="Strategy\Structure\ConcreteStrategyA.cs" />
     <Compile Include="Strategy\Structure\ConcreteStrategyB.cs" />
