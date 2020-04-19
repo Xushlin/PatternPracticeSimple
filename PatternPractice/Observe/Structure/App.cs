@@ -9,9 +9,15 @@ namespace PatternPractice.Observe.Structure
         public string LastName { get; set; }
     }
     public class MyObservable : IObservable<User> {
+        private readonly User user;
+
+        public MyObservable(User user)
+        {
+            this.user = user;
+        }
         public IDisposable Subscribe(IObserver<User> observer)
         {
-            observer.OnNext(new User {FirstName = "Michael", LastName = "Xu"});
+            observer.OnNext(user);
 
             return null;
         }
@@ -44,10 +50,13 @@ namespace PatternPractice.Observe.Structure
             subject.Register(observer);
             subject.Notify();
 
-            IObservable<User> ob=new MyObservable();
+            var user = new User { FirstName = "Michael ", LastName = "Xu" };
+            IObservable<User> ob=new MyObservable(user);
+            
             IObserver<User> Obs=new MyObserver();
+           
             ob.Subscribe(Obs);
-
+            
             Console.ReadKey();
         }
     }
