@@ -8,7 +8,7 @@ namespace PatternPractice.Decorator.Structure
         public abstract void Operation();
     }
 
-    public class ConcreteComponent : Component
+    public class ConcreteComponent : Component 
     {
         public override void Operation()
         {
