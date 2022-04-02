@@ -44,7 +44,7 @@ namespace PatternPractice.Decorator.WindowComponent
         {
             this.component = component;
         }
-        public override void  Display()
+        public override void Display()
         {
             component.Display();
         }
@@ -89,19 +89,20 @@ namespace PatternPractice.Decorator.WindowComponent
     {
         public static void Main()
         {
-            var window=new Window();
-            var scrollBarDecorator=new ScrollBarDecorator(window);
-            var blackBorderDecorator = new BlackBorderDecorator(scrollBarDecorator);
+            Component window, scrollBarDecorator, blackBorderDecorator;
+            window = new Window();
+            scrollBarDecorator = new ScrollBarDecorator(window);
+            blackBorderDecorator = new BlackBorderDecorator(scrollBarDecorator);
             blackBorderDecorator.Display();
 
-            var textBox=new TextBox();           
+            var textBox = new TextBox();
             scrollBarDecorator = new ScrollBarDecorator(textBox);
             blackBorderDecorator = new BlackBorderDecorator(scrollBarDecorator);
             blackBorderDecorator.Display();
 
             var listBox = new ListBox();
-            scrollBarDecorator=new ScrollBarDecorator(listBox);
-            blackBorderDecorator=new BlackBorderDecorator(scrollBarDecorator);
+            scrollBarDecorator = new ScrollBarDecorator(listBox);
+            blackBorderDecorator = new BlackBorderDecorator(scrollBarDecorator);
             blackBorderDecorator.Display();
         }
     }

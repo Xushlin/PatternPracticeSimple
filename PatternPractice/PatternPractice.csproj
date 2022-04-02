@@ -103,6 +103,7 @@
     <Compile Include="Composite\Structure\Leaf.cs" />
     <Compile Include="Composite\Structure\App.cs" />
     <Compile Include="ConfigurationManager.cs" />
+    <Compile Include="Decorator\Document\Document.cs" />
     <Compile Include="Decorator\Structure\Component.cs" />
     <Compile Include="Decorator\WindowComponent\Component.cs" />
     <Compile Include="FactoryMethod\Log\App.cs" />
