@@ -1,213 +1,17 @@
-﻿<?xml version="1.0" encoding="utf-8"?>
-<Project ToolsVersion="12.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
-  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+﻿<Project Sdk="Microsoft.NET.Sdk">
   <PropertyGroup>
-    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
-    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
-    <ProjectGuid>{1CCFD55A-A8AB-4C39-9200-5467BF4F2820}</ProjectGuid>
+    <TargetFramework>net9.0</TargetFramework>
     <OutputType>Exe</OutputType>
-    <AppDesignerFolder>Properties</AppDesignerFolder>
-    <RootNamespace>PatternPractice</RootNamespace>
-    <AssemblyName>PatternPractice</AssemblyName>
-    <TargetFrameworkVersion>v4.6</TargetFrameworkVersion>
-    <FileAlignment>512</FileAlignment>
-    <TargetFrameworkProfile />
-  </PropertyGroup>
-  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
-    <PlatformTarget>AnyCPU</PlatformTarget>
-    <DebugSymbols>true</DebugSymbols>
-    <DebugType>full</DebugType>
-    <Optimize>false</Optimize>
-    <OutputPath>bin\Debug\</OutputPath>
-    <DefineConstants>DEBUG;TRACE</DefineConstants>
-    <ErrorReport>prompt</ErrorReport>
-    <WarningLevel>4</WarningLevel>
-  </PropertyGroup>
-  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
-    <PlatformTarget>AnyCPU</PlatformTarget>
-    <DebugType>pdbonly</DebugType>
-    <Optimize>true</Optimize>
-    <OutputPath>bin\Release\</OutputPath>
-    <DefineConstants>TRACE</DefineConstants>
-    <ErrorReport>prompt</ErrorReport>
-    <WarningLevel>4</WarningLevel>
+    <GenerateAssemblyInfo>false</GenerateAssemblyInfo>
   </PropertyGroup>
   <PropertyGroup>
     <StartupObject>PatternPractice.Program</StartupObject>
+    <AssemblyTitle>PatternPractice</AssemblyTitle>
+    <Product>PatternPractice</Product>
+    <Copyright>Copyright ©  2013</Copyright>
+    <AssemblyVersion>1.0.0.0</AssemblyVersion>
+    <FileVersion>1.0.0.0</FileVersion>
   </PropertyGroup>
-  <ItemGroup>
-    <Reference Include="MiscUtil, Version=0.2.0.0, Culture=neutral, PublicKeyToken=d3c42c4bfacf7596, processorArchitecture=MSIL">
-      <HintPath>..\packages\JonSkeet.MiscUtil.0.2.0\lib\net35\MiscUtil.dll</HintPath>
-    </Reference>
-    <Reference Include="System" />
-    <Reference Include="System.Configuration" />
-    <Reference Include="System.Core" />
-    <Reference Include="System.Xml.Linq" />
-    <Reference Include="System.Data.DataSetExtensions" />
-    <Reference Include="Microsoft.CSharp" />
-    <Reference Include="System.Data" />
-    <Reference Include="System.Xml" />
-  </ItemGroup>
-  <ItemGroup>
-    <Compile Include="AbstractFactory\App.cs" />
-    <Compile Include="AbstractFactory\IButton.cs" />
-    <Compile Include="AbstractFactory\ILabel.cs" />
-    <Compile Include="AbstractFactory\ISkinFactory.cs" />
-    <Compile Include="AbstractFactory\ITxtBox.cs" />
-    <Compile Include="AbstractFactory\SpingSkinFactory.cs" />
-    <Compile Include="AbstractFactory\SpringButton.cs" />
-    <Compile Include="AbstractFactory\SpringLabel.cs" />
-    <Compile Include="AbstractFactory\SpringTextBox.cs" />
-    <Compile Include="AbstractFactory\Structure\App.cs" />
-    <Compile Include="AbstractFactory\Structure\ConcreteFactoryA.cs" />
-    <Compile Include="AbstractFactory\Structure\ConcreteFactoryB.cs" />
-    <Compile Include="AbstractFactory\Structure\ConcreteProductA1.cs" />
-    <Compile Include="AbstractFactory\Structure\ConcreteProductA2.cs" />
-    <Compile Include="AbstractFactory\Structure\ConcreteProductB1.cs" />
-    <Compile Include="AbstractFactory\Structure\ConcreteProductB2.cs" />
-    <Compile Include="AbstractFactory\Structure\IFactory.cs" />
-    <Compile Include="AbstractFactory\Structure\IProductA.cs" />
-    <Compile Include="AbstractFactory\Structure\IProductB.cs" />
-    <Compile Include="AbstractFactory\SummerButton.cs" />
-    <Compile Include="AbstractFactory\SummerLabel.cs" />
-    <Compile Include="AbstractFactory\SummerSkinFactory.cs" />
-    <Compile Include="AbstractFactory\SummerTxtBox.cs" />
-    <Compile Include="Adapter\ScoreOperation\BinarySearchAdaptee.cs" />
-    <Compile Include="Adapter\ScoreOperation\IScoreOperation.cs" />
-    <Compile Include="Adapter\ScoreOperation\OperationAdapter.cs" />
-    <Compile Include="Adapter\ScoreOperation\QuickSortAdaptee.cs" />
-    <Compile Include="Adapter\ScoreOperation\App.cs" />
-    <Compile Include="Adapter\Structure\Adaptee.cs" />
-    <Compile Include="Adapter\Structure\Adapter.cs" />
-    <Compile Include="Adapter\Structure\App.cs" />
-    <Compile Include="Adapter\Structure\ITarget.cs" />
-    <Compile Include="Builder\Actor.cs" />
-    <Compile Include="Builder\ActorBuilder.cs" />
-    <Compile Include="Builder\ActorController.cs" />
-    <Compile Include="Builder\AngelBuilder.cs" />
-    <Compile Include="Builder\App.cs" />
-    <Compile Include="Builder\DevilBuilder.cs" />
-    <Compile Include="Builder\HeroBuilder.cs" />
-    <Compile Include="ChainOfResponsibility\Structure\App.cs" />
-    <Compile Include="ChainOfResponsibility\Structure\ConcreteHandler1.cs" />
-    <Compile Include="ChainOfResponsibility\Structure\ConcreteHandler2.cs" />
-    <Compile Include="ChainOfResponsibility\Structure\ConcreteHandler3.cs" />
-    <Compile Include="ChainOfResponsibility\Structure\Handler.cs" />
-    <Compile Include="ChainOfResponsibility\Structure\RejectHandler.cs" />
-    <Compile Include="Composite\RealWorld\CompositeElement.cs" />
-    <Compile Include="Composite\RealWorld\DrawingElement.cs" />
-    <Compile Include="Composite\RealWorld\PrimitiveElement.cs" />
-    <Compile Include="Composite\RealWorld\App.cs" />
-    <Compile Include="Composite\Structure\Component.cs" />
-    <Compile Include="Composite\Structure\Composite.cs" />
-    <Compile Include="Composite\Structure\Leaf.cs" />
-    <Compile Include="Composite\Structure\App.cs" />
-    <Compile Include="ConfigurationManager.cs" />
-    <Compile Include="Decorator\Document\Document.cs" />
-    <Compile Include="Decorator\Structure\Component.cs" />
-    <Compile Include="Decorator\WindowComponent\Component.cs" />
-    <Compile Include="FactoryMethod\Log\App.cs" />
-    <Compile Include="FactoryMethod\Audio\Acc.cs" />
-    <Compile Include="FactoryMethod\Audio\AccFactory.cs" />
-    <Compile Include="FactoryMethod\Audio\App.cs" />
-    <Compile Include="FactoryMethod\Audio\IAudio.cs" />
-    <Compile Include="FactoryMethod\Audio\IFactory.cs" />
-    <Compile Include="FactoryMethod\Audio\Mp3.cs" />
-    <Compile Include="FactoryMethod\Audio\Mp3Factory.cs" />
-    <Compile Include="FactoryMethod\Audio\Wav.cs" />
-    <Compile Include="FactoryMethod\Audio\WavFactory.cs" />
-    <Compile Include="FactoryMethod\Audio\Wma.cs" />
-    <Compile Include="FactoryMethod\Audio\WmaFactory.cs" />
-    <Compile Include="FactoryMethod\Log\DabaseLogger.cs" />
-    <Compile Include="FactoryMethod\Log\DatabaseLoggerFactory.cs" />
-    <Compile Include="FactoryMethod\Log\FileLogger.cs" />
-    <Compile Include="FactoryMethod\Log\FileLoggerFactory.cs" />
-    <Compile Include="FactoryMethod\Log\ILogger.cs" />
-    <Compile Include="FactoryMethod\Log\ILoggerFactory.cs" />
-    <Compile Include="FactoryMethod\Structure\ConcreteFactoryA.cs" />
-    <Compile Include="FactoryMethod\Structure\ConcreteFactoryB.cs" />
-    <Compile Include="FactoryMethod\Structure\ConcreteProductA.cs" />
-    <Compile Include="FactoryMethod\Structure\ConcreteProductB.cs" />
-    <Compile Include="FactoryMethod\Structure\App.cs" />
-    <Compile Include="FactoryMethod\Structure\IFactory.cs" />
-    <Compile Include="FactoryMethod\Structure\IProduct.cs" />
-    <Compile Include="Flyweight\CharacterInstance\App.cs" />
-    <Compile Include="Flyweight\CharacterInstance\Character.cs" />
-    <Compile Include="Flyweight\CharacterInstance\CharacterA.cs" />
-    <Compile Include="Flyweight\CharacterInstance\CharacterB.cs" />
-    <Compile Include="Flyweight\CharacterInstance\CharacterFactory.cs" />
-    <Compile Include="Flyweight\CharacterInstance\CharacterZ.cs" />
-    <Compile Include="Flyweight\Structure\App.cs" />
-    <Compile Include="Flyweight\Structure\ConcreteFlyweight.cs" />
-    <Compile Include="Flyweight\Structure\Flyweight.cs" />
-    <Compile Include="Flyweight\Structure\FlyweightFactory.cs" />
-    <Compile Include="Flyweight\Structure\UnsharedConcreteFliyweight.cs" />
-    <Compile Include="Mediator\App.cs" />
-    <Compile Include="Mediator\IMediator.cs" />
-    <Compile Include="Mediator\IComponent.cs" />
-    <Compile Include="ObjectBuildFactory.cs" />
-    <Compile Include="Observe\Structure\App.cs" />
-    <Compile Include="Observe\Structure\ConcreteObserver.cs" />
-    <Compile Include="Observe\Structure\ConcreteSubject.cs" />
-    <Compile Include="Observe\Structure\IObserver.cs" />
-    <Compile Include="Observe\Structure\ISubject.cs" />
-    <Compile Include="Program.cs" />
-    <Compile Include="Properties\AssemblyInfo.cs" />
-    <Compile Include="Prototype\Structure\App.cs" />
-    <Compile Include="Prototype\Structure\ConcretePrototype1.cs" />
-    <Compile Include="Prototype\Structure\ConcretePrototype2.cs" />
-    <Compile Include="Prototype\Structure\Prototype.cs" />
-    <Compile Include="Singleton\Singleton.cs" />
-    <Compile Include="State\GumballMachine\App.cs" />
-    <Compile Include="State\GumballMachine\GumballMachine.cs" />
-    <Compile Include="State\GumballMachine\HasQuarterState.cs" />
-    <Compile Include="State\GumballMachine\IState.cs" />
-    <Compile Include="State\GumballMachine\NoQuarterState.cs" />
-    <Compile Include="State\GumballMachine\SoldState.cs" />
-    <Compile Include="State\GumballMachine\SoldOutState.cs" />
-    <Compile Include="State\GumballMachine\WinnerState.cs" />
-    <Compile Include="StaticFactory\Animal\AnimalFactory.cs" />
-    <Compile Include="StaticFactory\Animal\AnimalType.cs" />
-    <Compile Include="StaticFactory\Animal\App.cs" />
-    <Compile Include="StaticFactory\Animal\Dog.cs" />
-    <Compile Include="StaticFactory\Animal\IAnimal.cs" />
-    <Compile Include="StaticFactory\Animal\Cat.cs" />
-    <Compile Include="StaticFactory\Animal\Mouse.cs" />
-    <Compile Include="StaticFactory\Audio\App.cs" />
-    <Compile Include="StaticFactory\Audio\AudioFactory.cs" />
-    <Compile Include="StaticFactory\Audio\IAudio.cs" />
-    <Compile Include="StaticFactory\Audio\Mp3.cs" />
-    <Compile Include="StaticFactory\Audio\Wav.cs" />
-    <Compile Include="StaticFactory\Audio\Wma.cs" />
-    <Compile Include="StaticFactory\Calculator\App.cs" />
-    <Compile Include="StaticFactory\Calculator\Convertor.cs" />
-    <Compile Include="StaticFactory\Calculator\IOperation.cs" />
-    <Compile Include="StaticFactory\Calculator\OperationAdd.cs" />
-    <Compile Include="StaticFactory\Calculator\OperationDiv.cs" />
-    <Compile Include="StaticFactory\Calculator\OperationFactory.cs" />
-    <Compile Include="StaticFactory\Calculator\OperationMul.cs" />
-    <Compile Include="StaticFactory\Calculator\OperationSub.cs" />
-    <Compile Include="StaticFactory\Structure\ConcreteProductA.cs" />
-    <Compile Include="StaticFactory\Structure\ConcreteProductB.cs" />
-    <Compile Include="StaticFactory\Structure\Factory.cs" />
-    <Compile Include="StaticFactory\Structure\App.cs" />
-    <Compile Include="StaticFactory\Structure\IProduct.cs" />
-    <Compile Include="Strategy\Sort\SortStrategy.cs" />
-    <Compile Include="Strategy\Structure\App.cs" />
-    <Compile Include="Strategy\Structure\ConcreteStrategyA.cs" />
-    <Compile Include="Strategy\Structure\ConcreteStrategyB.cs" />
-    <Compile Include="Strategy\Structure\ConcreteStrategyC.cs" />
-    <Compile Include="Strategy\Structure\Context.cs" />
-    <Compile Include="Strategy\Structure\Strategy.cs" />
-    <Compile Include="TemplateMethod\Structure\AbstractClass.cs" />
-  </ItemGroup>
-  <ItemGroup>
-    <None Include="App.config">
-      <SubType>Designer</SubType>
-    </None>
-    <None Include="parrern.vsd" />
-    <None Include="StaticFactory\Structure\Static Factory.vsd" />
-  </ItemGroup>
   <ItemGroup>
     <Folder Include="Bridge\" />
     <Folder Include="Facade\" />
@@ -215,15 +19,10 @@
   <ItemGroup>
     <Content Include="FactoryMethod\FactoryMethod.txt" />
     <Content Include="Strategy\Structure\Strategy.png" />
-    <None Include="packages.config" />
-    <None Include="Patern.md" />
   </ItemGroup>
-  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
-  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
-       Other similar extension points exist, see Microsoft.Common.targets.
-  <Target Name="BeforeBuild">
-  </Target>
-  <Target Name="AfterBuild">
-  </Target>
-  -->
+  <ItemGroup>
+    <PackageReference Include="Microsoft.CSharp" Version="4.7.0" />
+    <PackageReference Include="System.Data.DataSetExtensions" Version="4.5.0" />
+    <PackageReference Include="System.Configuration.ConfigurationManager" Version="9.0.0" />
+  </ItemGroup>
 </Project>
