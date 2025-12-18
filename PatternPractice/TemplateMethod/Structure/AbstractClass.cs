@@ -1,7 +1,7 @@
 using System;
 using System.ComponentModel;
 
-namespace PatternPractice.TemplateMethod.Sturcture
+namespace PatternPractice.TemplateMethod.Structure
 {
     public abstract class AbsctractClass
     {
