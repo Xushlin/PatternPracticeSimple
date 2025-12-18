@@ -1,0 +1,381 @@
+{
+  "settings": {
+    "components": {
+      "code": false,
+      "binaries": false
+    },
+    "targetId": "net10.0",
+    "targetDisplayName": ".NETCoreApp,Version=v10.0"
+  },
+  "analysisStartTime": "2025-12-18T07:18:15.0885415Z",
+  "analysisEndTime": "2025-12-18T07:18:16.1985618Z",
+  "privacyModeHelpUrl": "https://go.microsoft.com/fwlink/?linkid=2270980",
+  "stats": {
+    "summary": {
+      "projects": 1,
+      "issues": 4,
+      "incidents": 10,
+      "effort": 10
+    },
+    "charts": {
+      "severity": {
+        "Mandatory": 2,
+        "Optional": 0,
+        "Potential": 8,
+        "Information": 0
+      },
+      "category": {
+        "NuGet": 1,
+        "Project": 1,
+        "Api": 8
+      }
+    }
+  },
+  "projects": [
+    {
+      "path": "PatternPractice\\PatternPractice.csproj",
+      "startingProject": true,
+      "issues": 3,
+      "storyPoints": 10,
+      "properties": {
+        "appName": "PatternPractice",
+        "projectKind": "DotNetCoreApp",
+        "frameworks": [
+          "net9.0"
+        ],
+        "languages": [
+          "C#"
+        ],
+        "tools": [
+          "MSBuild"
+        ],
+        "isSdkStyle": true,
+        "numberOfFiles": 154,
+        "numberOfCodeFiles": 152,
+        "linesTotal": 3776,
+        "linesOfCode": 3632,
+        "totalApiScanned": 1899,
+        "minLinesOfCodeToChange": 8,
+        "maxLinesOfCodeToChange": 8
+      },
+      "ruleInstances": [
+        {
+          "incidentId": "10826f0d-4d6a-47e7-b97c-1c7cb36134fd",
+          "ruleId": "NuGet.0003",
+          "projectPath": "PatternPractice\\PatternPractice.csproj",
+          "state": "Active",
+          "location": {
+            "snippetModel": {
+              "unrestricted": "System.Data.DataSetExtensions, 4.5.0\n\nRecommendation:\n\nPackage functionality included with new framework reference",
+              "protected": "System.Data.DataSetExtensions, 4.5.0\n\nRecommendation:\n\nPackage functionality included with new framework reference"
+            },
+            "kind": "File",
+            "path": "PatternPractice\\PatternPractice.csproj",
+            "snippet": "System.Data.DataSetExtensions, 4.5.0\n\nRecommendation:\n\nPackage functionality included with new framework reference",
+            "protectedSnippet": "System.Data.DataSetExtensions, 4.5.0\n\nRecommendation:\n\nPackage functionality included with new framework reference",
+            "label": "System.Data.DataSetExtensions 4.5.0",
+            "properties": {
+              "PackageId": "System.Data.DataSetExtensions",
+              "PackageVersion": "4.5.0",
+              "PackageNewVersion": null,
+              "PackageReplacements": null
+            }
+          }
+        },
+        {
+          "incidentId": "02fc9146-ca04-41c3-b92f-e5bbcf3c42e5",
+          "ruleId": "Project.0002",
+          "projectPath": "PatternPractice\\PatternPractice.csproj",
+          "state": "Active",
+          "location": {
+            "snippetModel": {
+              "unrestricted": "Current target framework: net9.0\nRecommended target framework: net10.0",
+              "protected": "Current target framework: net9.0\nRecommended target framework: net10.0"
+            },
+            "kind": "File",
+            "path": "PatternPractice\\PatternPractice.csproj",
+            "snippet": "Current target framework: net9.0\nRecommended target framework: net10.0",
+            "protectedSnippet": "Current target framework: net9.0\nRecommended target framework: net10.0",
+            "properties": {
+              "CurrentTargetFramework": "net9.0",
+              "RecommendedTargetFramework": "net10.0"
+            }
+          }
+        },
+        {
+          "incidentId": "4c1edabe-d24a-4c2d-8219-f0bcc06cc45b",
+          "ruleId": "Api.0002",
+          "description": "API is available in package System.Configuration.ConfigurationManager, 9.0.0-preview.6.24302.3. Add package reference to System.Configuration.ConfigurationManager, 9.0.0-preview.6.24302.3",
+          "projectPath": "PatternPractice\\PatternPractice.csproj",
+          "state": "Active",
+          "location": {
+            "snippetModel": {
+              "unrestricted": "AppSettings",
+              "protected": "T:System.Configuration.ConfigurationManager"
+            },
+            "kind": "File",
+            "path": "PatternPractice\\ConfigurationManager.cs",
+            "snippet": "AppSettings",
+            "protectedSnippet": "T:System.Configuration.ConfigurationManager",
+            "label": "T:System.Configuration.ConfigurationManager",
+            "properties": {
+              "PackageId": "System.Configuration.ConfigurationManager",
+              "PackageNewVersion": "9.0.0-preview.6.24302.3"
+            },
+            "line": 9,
+            "column": 43
+          }
+        },
+        {
+          "incidentId": "b638e69e-87c5-4030-8d88-aabb0d516feb",
+          "ruleId": "Api.0002",
+          "description": "API is available in package System.Configuration.ConfigurationManager, 9.0.0-preview.6.24302.3. Add package reference to System.Configuration.ConfigurationManager, 9.0.0-preview.6.24302.3",
+          "projectPath": "PatternPractice\\PatternPractice.csproj",
+          "state": "Active",
+          "location": {
+            "snippetModel": {
+              "unrestricted": "AppSettings",
+              "protected": "P:System.Configuration.ConfigurationManager.AppSettings"
+            },
+            "kind": "File",
+            "path": "PatternPractice\\ConfigurationManager.cs",
+            "snippet": "AppSettings",
+            "protectedSnippet": "P:System.Configuration.ConfigurationManager.AppSettings",
+            "label": "P:System.Configuration.ConfigurationManager.AppSettings",
+            "properties": {
+              "PackageId": "System.Configuration.ConfigurationManager",
+              "PackageNewVersion": "9.0.0-preview.6.24302.3"
+            },
+            "line": 9,
+            "column": 43
+          }
+        },
+        {
+          "incidentId": "7ade7cc6-54cd-4757-bdce-e824e604c07f",
+          "ruleId": "Api.0002",
+          "description": "API is available in package System.Configuration.ConfigurationManager, 9.0.0-preview.6.24302.3. Add package reference to System.Configuration.ConfigurationManager, 9.0.0-preview.6.24302.3",
+          "projectPath": "PatternPractice\\PatternPractice.csproj",
+          "state": "Active",
+          "location": {
+            "snippetModel": {
+              "unrestricted": "AppSettings",
+              "protected": "T:System.Configuration.ConfigurationManager"
+            },
+            "kind": "File",
+            "path": "PatternPractice\\ConfigurationManager.cs",
+            "snippet": "AppSettings",
+            "protectedSnippet": "T:System.Configuration.ConfigurationManager",
+            "label": "T:System.Configuration.ConfigurationManager",
+            "properties": {
+              "PackageId": "System.Configuration.ConfigurationManager",
+              "PackageNewVersion": "9.0.0-preview.6.24302.3"
+            },
+            "line": 8,
+            "column": 43
+          }
+        },
+        {
+          "incidentId": "1a9c51ce-f053-41ae-b639-81aa00ae2873",
+          "ruleId": "Api.0002",
+          "description": "API is available in package System.Configuration.ConfigurationManager, 9.0.0-preview.6.24302.3. Add package reference to System.Configuration.ConfigurationManager, 9.0.0-preview.6.24302.3",
+          "projectPath": "PatternPractice\\PatternPractice.csproj",
+          "state": "Active",
+          "location": {
+            "snippetModel": {
+              "unrestricted": "AppSettings",
+              "protected": "P:System.Configuration.ConfigurationManager.AppSettings"
+            },
+            "kind": "File",
+            "path": "PatternPractice\\ConfigurationManager.cs",
+            "snippet": "AppSettings",
+            "protectedSnippet": "P:System.Configuration.ConfigurationManager.AppSettings",
+            "label": "P:System.Configuration.ConfigurationManager.AppSettings",
+            "properties": {
+              "PackageId": "System.Configuration.ConfigurationManager",
+              "PackageNewVersion": "9.0.0-preview.6.24302.3"
+            },
+            "line": 8,
+            "column": 43
+          }
+        },
+        {
+          "incidentId": "698a0116-de69-4dd7-b34f-0c9ead28fa53",
+          "ruleId": "Api.0002",
+          "description": "API is available in package System.Configuration.ConfigurationManager, 9.0.0-preview.6.24302.3. Add package reference to System.Configuration.ConfigurationManager, 9.0.0-preview.6.24302.3",
+          "projectPath": "PatternPractice\\PatternPractice.csproj",
+          "state": "Active",
+          "location": {
+            "snippetModel": {
+              "unrestricted": "AppSettings",
+              "protected": "T:System.Configuration.ConfigurationManager"
+            },
+            "kind": "File",
+            "path": "PatternPractice\\ConfigurationManager.cs",
+            "snippet": "AppSettings",
+            "protectedSnippet": "T:System.Configuration.ConfigurationManager",
+            "label": "T:System.Configuration.ConfigurationManager",
+            "properties": {
+              "PackageId": "System.Configuration.ConfigurationManager",
+              "PackageNewVersion": "9.0.0-preview.6.24302.3"
+            },
+            "line": 7,
+            "column": 51
+          }
+        },
+        {
+          "incidentId": "1381a3ea-349d-45aa-835a-8e27d5fbe5b3",
+          "ruleId": "Api.0002",
+          "description": "API is available in package System.Configuration.ConfigurationManager, 9.0.0-preview.6.24302.3. Add package reference to System.Configuration.ConfigurationManager, 9.0.0-preview.6.24302.3",
+          "projectPath": "PatternPractice\\PatternPractice.csproj",
+          "state": "Active",
+          "location": {
+            "snippetModel": {
+              "unrestricted": "AppSettings",
+              "protected": "P:System.Configuration.ConfigurationManager.AppSettings"
+            },
+            "kind": "File",
+            "path": "PatternPractice\\ConfigurationManager.cs",
+            "snippet": "AppSettings",
+            "protectedSnippet": "P:System.Configuration.ConfigurationManager.AppSettings",
+            "label": "P:System.Configuration.ConfigurationManager.AppSettings",
+            "properties": {
+              "PackageId": "System.Configuration.ConfigurationManager",
+              "PackageNewVersion": "9.0.0-preview.6.24302.3"
+            },
+            "line": 7,
+            "column": 51
+          }
+        },
+        {
+          "incidentId": "3967d274-9684-47f8-8a7d-4dc0342c90a8",
+          "ruleId": "Api.0002",
+          "description": "API is available in package System.Configuration.ConfigurationManager, 9.0.0-preview.6.24302.3. Add package reference to System.Configuration.ConfigurationManager, 9.0.0-preview.6.24302.3",
+          "projectPath": "PatternPractice\\PatternPractice.csproj",
+          "state": "Active",
+          "location": {
+            "snippetModel": {
+              "unrestricted": "AppSettings",
+              "protected": "T:System.Configuration.ConfigurationManager"
+            },
+            "kind": "File",
+            "path": "PatternPractice\\ConfigurationManager.cs",
+            "snippet": "AppSettings",
+            "protectedSnippet": "T:System.Configuration.ConfigurationManager",
+            "label": "T:System.Configuration.ConfigurationManager",
+            "properties": {
+              "PackageId": "System.Configuration.ConfigurationManager",
+              "PackageNewVersion": "9.0.0-preview.6.24302.3"
+            },
+            "line": 6,
+            "column": 49
+          }
+        },
+        {
+          "incidentId": "2411e317-af1e-4ffa-b775-3afbcee72eb3",
+          "ruleId": "Api.0002",
+          "description": "API is available in package System.Configuration.ConfigurationManager, 9.0.0-preview.6.24302.3. Add package reference to System.Configuration.ConfigurationManager, 9.0.0-preview.6.24302.3",
+          "projectPath": "PatternPractice\\PatternPractice.csproj",
+          "state": "Active",
+          "location": {
+            "snippetModel": {
+              "unrestricted": "AppSettings",
+              "protected": "P:System.Configuration.ConfigurationManager.AppSettings"
+            },
+            "kind": "File",
+            "path": "PatternPractice\\ConfigurationManager.cs",
+            "snippet": "AppSettings",
+            "protectedSnippet": "P:System.Configuration.ConfigurationManager.AppSettings",
+            "label": "P:System.Configuration.ConfigurationManager.AppSettings",
+            "properties": {
+              "PackageId": "System.Configuration.ConfigurationManager",
+              "PackageNewVersion": "9.0.0-preview.6.24302.3"
+            },
+            "line": 6,
+            "column": 49
+          }
+        }
+      ],
+      "features": [
+        {
+          "featureId": "LegacyConfiguration",
+          "incidents": [
+            "2411e317-af1e-4ffa-b775-3afbcee72eb3",
+            "3967d274-9684-47f8-8a7d-4dc0342c90a8",
+            "1381a3ea-349d-45aa-835a-8e27d5fbe5b3",
+            "698a0116-de69-4dd7-b34f-0c9ead28fa53",
+            "1a9c51ce-f053-41ae-b639-81aa00ae2873",
+            "7ade7cc6-54cd-4757-bdce-e824e604c07f",
+            "b638e69e-87c5-4030-8d88-aabb0d516feb",
+            "4c1edabe-d24a-4c2d-8219-f0bcc06cc45b"
+          ]
+        }
+      ]
+    }
+  ],
+  "rules": {
+    "NuGet.0003": {
+      "id": "NuGet.0003",
+      "isFeature": false,
+      "description": "NuGet package functionality is included with framework reference.\n\nPackage needs to be removed.",
+      "label": "NuGet package functionality is included with framework reference",
+      "severity": "Mandatory",
+      "effort": 1,
+      "links": [
+        {
+          "url": "https://go.microsoft.com/fwlink/?linkid=2262609",
+          "isCustom": false
+        }
+      ]
+    },
+    "Project.0002": {
+      "id": "Project.0002",
+      "isFeature": false,
+      "description": "Project\u0027s target framework(s) needs to be changed to the new target framework that you selected for this upgrade.\n\nDuring upgrade target framework will be adjusted to corresponding platform when applicable. In some cases project would result in multiple target frameworks after the upgrade if it was using features that now have their own platforms in modern .NET frameworks (windows, iOS, Android etc).",
+      "label": "Project\u0027s target framework(s) needs to be changed",
+      "severity": "Mandatory",
+      "effort": 1,
+      "links": [
+        {
+          "title": "Overview of porting from .NET Framework to .NET",
+          "url": "https://go.microsoft.com/fwlink/?linkid=2265227",
+          "isCustom": false
+        },
+        {
+          "title": ".NET project SDKs",
+          "url": "https://go.microsoft.com/fwlink/?linkid=2265226",
+          "isCustom": false
+        }
+      ]
+    },
+    "Api.0002": {
+      "id": "Api.0002",
+      "isFeature": false,
+      "description": "API is source incompatible for selected .NET version: requires code changes to compile successfully when targeting a new version, such as removing obsolete APIs or changing method signatures.",
+      "label": "Source incompatible for selected .NET version",
+      "severity": "Potential",
+      "effort": 1,
+      "links": [
+        {
+          "title": "Breaking changes in .NET",
+          "url": "https://go.microsoft.com/fwlink/?linkid=2262679",
+          "isCustom": false
+        }
+      ]
+    },
+    "LegacyConfiguration": {
+      "id": "LegacyConfiguration",
+      "isFeature": false,
+      "description": "Legacy XML-based configuration system (app.config/web.config) that has been replaced by a more flexible configuration model in .NET Core. The old system was rigid and XML-based. Migrate to Microsoft.Extensions.Configuration with JSON/environment variables; use System.Configuration.ConfigurationManager NuGet package as interim bridge if needed.",
+      "label": "Legacy Configuration System",
+      "severity": "Mandatory",
+      "effort": 2,
+      "links": [
+        {
+          "title": "Configuration in .NET",
+          "url": "https://go.microsoft.com/fwlink/?linkid=2341702",
+          "isCustom": false
+        }
+      ]
+    }
+  }
+}
